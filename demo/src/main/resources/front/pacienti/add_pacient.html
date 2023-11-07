@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add pacient</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<h2>Add pacient</h2>
+
+<form action="submit.php" method="post"> <!-- Укажите нужный путь к обработчику формы (submit.php) -->
+  <div>
+    <label for="jm">JMENO</label>
+    <input type="text" id="jm" name="jm">
+  </div>
+
+  <div>
+    <label for="prijmeni">PRIJMENI</label>
+    <input type="text" id="prijmeni" name="prijmeni">
+  </div>
+
+  <div>
+    <label for="datum_hospitalizace">DATUM_HOSPITALIZACE</label>
+    <input type="text" id="datum_hospitalizace" name="datum_hospitalizace">
+  </div>
+
+  <div>
+    <label for="datum_narozeni">DATUM_NAROZENI</label>
+    <input type="text" id="datum_narozeni" name="datum_narozeni">
+  </div>
+
+  <div>
+    <label for="cislo_telefonu">CISLO_TELEFONU</label>
+    <input type="text" id="cislo_telefonu" name="cislo_telefonu">
+  </div>
+
+  <div>
+    <label for="zeme">ZEME</label>
+    <input type="text" id="zeme" name="zeme">
+  </div>
+
+  <div>
+    <label for="mesto">MESTO</label>
+    <input type="text" id="mesto" name="mesto">
+  </div>
+
+  <div>
+    <label for="adresa">ADRESA</label>
+    <input type="text" id="adresa" name="adresa">
+  </div>
+
+  <div>
+    <label for="psc">PSC</label>
+    <input type="text" id="psc" name="psc">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
