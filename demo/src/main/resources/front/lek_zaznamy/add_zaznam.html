@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Lekarsky Zaznam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    div {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+<h2>Add Lekarsky Zaznam</h2>
+
+<form action="submit_lekarsky_zaznam.php" method="post"> <!-- Укажите нужный путь к обработчику формы (submit_lekarsky_zaznam.php) -->
+  <div>
+    <label for="pacient_jmeno">PACIENT_JMENO</label>
+    <input type="text" id="pacient_jmeno" name="pacient_jmeno">
+  </div>
+
+  <div>
+    <label for="pacient_prijmeni">PACIENT_PRIJMENI</label>
+    <input type="text" id="pacient_prijmeni" name="pacient_prijmeni">
+  </div>
+
+  <div>
+    <label for="pacient_pohlavi">PACIENT_POHLAVI</label>
+    <input type="text" id="pacient_pohlavi" name="pacient_pohlavi">
+  </div>
+
+  <div>
+    <label for="zaznamy_diagnoza_pacienta">ZAZNAMY_DIAGNOZA_PACIENTA</label>
+    <input type="text" id="zaznamy_diagnoza_pacienta" name="zaznamy_diagnoza_pacienta">
+  </div>
+
+  <div>
+    <label for="zamestnanci_jmeno">ZAMESTNANCI_JMENO</label>
+    <input type="text" id="zamestnanci_jmeno" name="zamestnanci_jmeno">
+  </div>
+
+  <div>
+    <label for="zamestnanci_prijmeni">ZAMESTNANCI_PRIJMENI</label>
+    <input type="text" id="zamestnanci_prijmeni" name="zamestnanci_prijmeni">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
